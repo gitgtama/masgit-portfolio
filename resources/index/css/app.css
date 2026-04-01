@@ -268,7 +268,7 @@
 .c2 .box-c2 {
     width: 100%;
     margin: 1em auto 0; padding: 1em;
-    background: linear-gradient(135deg, #f8f9fa, #e9ecef, #cbe5ff, #aad4ff); color: #000000;
+    background: linear-gradient(270deg, #f8f9fa, #e9ecef, #cbe5ff, #aad4ff); color: #000000;
     text-align: center;
     overflow-x: hidden;
 }
