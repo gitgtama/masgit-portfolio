@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+        <title>Gita Ramadhan - My Portfolio</title>
+        <style>
+            *,
+            html {
+                margin: 0; padding: 0;
+                font-family: "Google Sans", Arial, Helvetica, sans-serif;
+                font-size: clamp(1rem, 4vw, 1.2rem);
+                box-sizing: border-box;
+            }
+
+            .loader {
+                position: fixed; display: flex;
+                align-items: center; justify-content: center;
+                width: 100%; height: 100%;
+                top: 0; left: 0;
+                background: #ffffff;
+                pointer-events: all;
+                opacity: 1;
+                z-index: 99;
+            }
+
+            .loader.un {
+                transition: 0.3s;
+                opacity: 0;
+                pointer-events: none;
+            }
+
+            .loader .spinner-out {
+                position: relative; display: flex;
+                align-items: center; justify-content: center;
+                width: 10vw; height: 10vw;
+                background: #000000;
+                border-radius: 50%;
+                overflow: hidden;
+                animation: rotateSpinner1 3s infinite linear;
+            }
+
+            .loader .spinner-out::before {
+                content: "";
+                position: absolute;
+                width: 70%; height: 70%;
+                top: 50%; left: 50%;
+                background: #ffffff;
+                transform: translate(-50%, -50%);
+                border-radius: 50%;
+                z-index: 1;
+            }
+
+            .loader .spinner-in {
+                width: 20%; height: 100%;
+                background: #ffffff;
+                overflow: hidden;
+                animation: rotateSpinner4 3s infinite linear;
+            }
+
+            .loader .spinner-in::before {
+                content: "";
+                position: absolute;
+                width: 100%; height: 20%;
+                background: #ffffff;
+                top: 50%; left: 50%;
+                transform: translate(-50%, -50%);
+                animation: rotateSpinner2 3s infinite linear;
+            }
+
+            .loader .spinner-in::after {
+                content: "";
+                position: absolute;
+                width: 100%; height: 10%;
+                background: #000000;
+                top: 50%; left: 50%;
+                transform: translateX(50%);
+                z-index: 1;
+                animation: rotateSpinner3 3s infinite linear;
+            }
+
+            @keyframes rotateSpinner1 {
+                20% {
+                    transform: rotate(360deg);
+                }
+
+                100% {
+                    transform: rotate(360deg);
+                }
+            }
+
+            @keyframes rotateSpinner2 {
+                21% {
+                    transform: translate(-50%, -50%);
+                }
+
+                30% {
+                    transform: translate(-25%, -50%);
+                }
+
+                40% {
+                    transform: translate(-25%, -100%);
+                }
+
+                70% {
+                    transform: translate(-25%, -100%);
+                }
+
+                80% {
+                    transform: translate(-25%, -50%);
+                }
+
+                90% {
+                    transform: translate(-50%, -50%);
+                }
+            }
+
+            @keyframes rotateSpinner3 {
+                41% {
+                    transform: translateX(50%);
+                }
+
+                50% {
+                    transform: translateX(0);
+                }
+
+                60% {
+                    transform: translateX(0);
+                }
+
+                70% {
+                    transform: translateX(50%);
+                }
+            }
+
+            @keyframes rotateSpinner4 {
+                30% {
+                    background: #ffffff;
+                }
+
+                40% {
+                    background: #000000;
+                }
+                
+                70% {
+                    background: #000000;
+                }
+
+                80% {
+                    background: #ffffff;
+                }
+            }
+
+            @keyframes rotateSpinner5 {
+                30% {
+                    background: #000000;
+                }
+
+                40% {
+                    background: #ffffff;
+                }
+                
+                70% {
+                    background: #ffffff;
+                }
+
+                80% {
+                    background: #000000;
+                }
+            }
+
+            @media screen and (max-width: 1366px) {
+                .loader .spinner-out {
+                    width: clamp(5em, 4vw, 7em); height: clamp(5em, 4vw, 7em);
+                }
+            }
+        </style>
+        <link rel="stylesheet" href="/resources/@static/css/bundle.css">
+        <link rel="stylesheet" href="/resources/index/css/app.css">
+    </head>
+    <body>
+        <section class="container">
+            <div class="cover">
+                <div class="background">
+                    <img class="light" src="/resources/index/img/vLight.png" />
+                </div>
+                <div class="content">
+                    <div class="branding b1">
+                        <span>GI<br />TA</span>
+                    </div>
+                    <div class="branding b2">
+                        <span>GI<br />TA</span>
+                    </div>
+                    <div class="hero">
+                        <img class="pLight" src="/resources/index/img/p2.png" />
+                    </div>
+                    <div class="footer">
+                        <div class="wrap">
+                            <p class="go-scroll">Scroll Down to Next</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-wrap">
+                <div class="blob"></div>
+                <div class="g0">
+                    <div class="gradient"></div>
+                </div>
+            </div>
+            <div class="c1" id="aboutme">
+                <div class="box">
+                    <p class="subtitle">HI, I'M GITA RAMADHAN</p>
+                    <br />
+                    <p class="title">About Me</p>
+                    <p class="content">
+                        I am just a vocational high school graduate who has skills in the computer field such as design, programming, network installation, computer repair and i also have experience working in a convection unit as a production operator.
+                    </p>
+                </div>
+                <div class="box">
+                    <div class="image">
+                        <img src="/resources/index/img/ppp.png" />
+                    </div>
+                </div>
+            </div>
+            <div class="bg-air">
+                <p>GITA</p>
+            </div>
+            <div class="c2">
+                <div class="box-c1" id="result">
+                    <p class="title">Result</p>
+                    <div class="grid-temp">
+                        <div class="g-box" style="grid-area: g1;">
+                            <div class="image">
+                                <img src="/resources/@static/img/noImage.png" />
+                            </div>
+                            <div class="unImage"></div>
+                            <div class="inf">Not Available</div>
+                        </div>
+                        <div class="g-box" style="grid-area: g2;">
+                            <div class="image">
+                                <img src="/resources/@static/img/noImage.png" />
+                            </div>
+                            <div class="unImage"></div>
+                            <div class="inf">Not Available</div>
+                        </div>
+                        <div class="g-box" style="grid-area: g3;">
+                            <div class="image">
+                                <img src="/resources/@static/img/noImage.png" />
+                            </div>
+                            <div class="unImage"></div>
+                            <div class="inf">Not Available</div>
+                        </div>
+                        <div class="g-box" style="grid-area: g4;">
+                            <div class="image">
+                                <img src="/resources/@static/img/noImage.png" />
+                            </div>
+                            <div class="unImage"></div>
+                            <div class="inf">Not Available</div>
+                        </div>
+                        <div class="g-box" style="grid-area: g5;">
+                            <div class="image">
+                                <img src="/resources/@static/img/noImage.png" />
+                            </div>
+                            <div class="unImage"></div>
+                            <div class="inf">Not Available</div>
+                        </div>
+                        <div class="g-box" style="grid-area: g6;">
+                            <div class="image">
+                                <img src="/resources/@static/img/noImage.png" />
+                            </div>
+                            <div class="unImage"></div>
+                            <div class="inf">Not Available</div>
+                        </div>
+                        <div class="g-box" style="grid-area: g7;">
+                            <div class="image">
+                                <img src="/resources/@static/img/noImage.png" />
+                            </div>
+                            <div class="unImage"></div>
+                            <div class="inf">Not Available</div>
+                        </div>
+                        <div class="g-box" style="grid-area: g8;">
+                            <div class="image">
+                                <img src="/resources/@static/img/noImage.png" />
+                            </div>
+                            <div class="unImage"></div>
+                            <div class="inf">Not Available</div>
+                        </div>
+                        <div class="g-box" style="grid-area: g9;">
+                            <div class="image">
+                                <img src="/resources/@static/img/noImage.png" />
+                            </div>
+                            <div class="unImage"></div>
+                            <div class="inf">Not Available</div>
+                        </div>
+                        <div class="g-box" style="grid-area: g10;">
+                            <div class="image">
+                                <img src="/resources/@static/img/noImage.png" />
+                            </div>
+                            <div class="unImage"></div>
+                            <div class="inf">Not Available</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-c2" id="skills">
+                    <p class="title">Skills</p>
+                    <div class="grid-temp">
+                        <div class="g-box"></div>
+                        <div class="g-box"></div>
+                        <div class="g-box"></div>
+                        <div class="g-box"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="loader">
+            <div class="spinner-out">
+                <div class="spinner-in"></div>
+            </div>
+        </section>
+        <script type="text/javascript">
+            setTimeout(() => {
+                document.querySelector('.loader').classList.add('un');
+            }, 7000)
+        </script>
+        <script src="/resources/index/js/app.js"></script>
+    </body>
+</html>

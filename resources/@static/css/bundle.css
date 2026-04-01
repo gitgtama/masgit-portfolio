@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'Frizon'; src: url('/resources/@static/fonts/frizon.ttf');
+}
+
+@font-face {
+    font-family: 'Gineris'; src: url('/resources/@static/fonts/gineris.ttf');
+}
+
+@font-face {
+    font-family: 'Largest'; src: url('/resources/@static/fonts/largest.ttf');
+}
+
+@font-face {
+    font-family: 'Neofolia'; font-style: normal; font-weight: normal; src: url('/resources/@static/fonts/neofolia.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Nexokora'; font-style: normal; font-weight: normal; src: url('/resources/@static/fonts/nexokora.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'NOS'; src: url('/resources/@static/fonts/nos.ttf');
+}
+
+@font-face {
+    font-family: 'Robo'; font-style: normal; src: url('/resources/@static/');
+}
+
+@font-face {
+    font-family: 'Robo'; font-style: italic; src: url('/resources/@static/fonts/robo italic.ttf');
+}
+
+@font-face {
+    font-family: 'Vallueangelo'; src: url('/resources/@static/fonts/vallueangelo.ttf');
+}
