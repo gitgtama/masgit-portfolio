@@ -277,7 +277,7 @@
     display: grid;
     margin: 1em auto; padding: 1em;
     width: 90%;
-    background: #dddddd; color: #000000;
+    color: #000000;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     grid-gap: 1em;
     border-radius: 1em;
