@@ -194,6 +194,13 @@
     object-fit: cover;
 }
 
+.c1 .btn-to {
+    padding: 0.3em 1em;
+    background: linear-gradient(90deg, #F5E6B3, #D4AF37); color: #000000;
+    font-size: clamp(1rem, 1.5vw, 5rem);
+    border-radius: 10em;
+}
+
 .c2 {
     position: absolute;
     width: 100%; min-height: 100vh;
