@@ -56,6 +56,7 @@
 .cover .content .branding:nth-child(2) span {
     color: transparent;
     -webkit-text-stroke: 0.02em #222222;
+    filter: blur(10px)
 }
 
 .cover .content .hero {
