@@ -281,7 +281,7 @@
 .c2 .box-c2 {
     width: 100%;
     margin: 1em auto 0; padding: 1em;
-    background: linear-gradient(90deg, #F5E6B3, #D4AF37); color: #000000;
+    background: linear-gradient(#F5E6B3, #D4AF37); color: #000000;
     text-align: center;
     overflow-x: hidden;
 }
@@ -337,6 +337,10 @@
             "g6 g7"
             "g8 g9"
             "g8 g10";
+    }
+
+    .c2 .box-c1 .grid-temp .g-box .image {
+        width: 100%;
     }
 }
 
