@@ -219,6 +219,7 @@
 
 .c2 .subtitle {
     font-size: clamp(1rem, 1.5vw, 5rem);
+    font-weight: bold;
 }
 
 .c2 .box-c1 {
