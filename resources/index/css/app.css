@@ -50,12 +50,12 @@
 }
 
 .cover .content .branding:nth-child(1) span {
-    color: #cbe5ff;
+    color: #000000;
 }
 
 .cover .content .branding:nth-child(2) span {
     color: transparent;
-    -webkit-text-stroke: 0.02em #cbe5ff;
+    -webkit-text-stroke: 0.02em #000000;
 }
 
 .cover .content .hero {
