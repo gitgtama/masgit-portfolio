@@ -240,7 +240,7 @@
 
 .c2 .box-c1 .grid-temp .g-box {
     position: relative; display: grid;
-    background: #000047; color: #000000;
+    background: linear-gradient(90deg, #F5E6B3, #D4AF37); color: #000000;
     grid-template-columns: repeat(
         auto-fit, minmax(20vw, 1fr)
     );
