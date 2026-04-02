@@ -157,6 +157,11 @@
     transition: 0.3s;
 }
 
+.c1 .forsub {
+    color: #D4AF37;
+    font-size: clamp(1rem, 1.5vw, 5rem);
+}
+
 .c1 .subtitle {
     font-family: 'Robo';
     font-style: italic;
