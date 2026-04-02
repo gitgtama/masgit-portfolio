@@ -137,7 +137,7 @@
 }
 
 .bg-air p{
-    color: #a6c1ee;
+    color: #F5E6B3;
     font-size: clamp(20rem, 30vw, 80rem);
     font-family: 'NOS';
     transform: rotate(90deg);
