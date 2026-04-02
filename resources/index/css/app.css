@@ -195,9 +195,11 @@
 }
 
 .c1 .btn-to {
+    width: max-content;
     padding: 0.3em 1em;
     background: linear-gradient(90deg, #F5E6B3, #D4AF37); color: #000000;
     font-size: clamp(1rem, 1.5vw, 5rem);
+    font-weight: bold;
     border-radius: 10em;
 }
 
