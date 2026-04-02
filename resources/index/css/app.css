@@ -84,7 +84,7 @@
 
 .cover .content .footer .wrap p {
     padding: 0.3em 1em;
-    background: linear-gradient(45deg, #D4AF37, #F5E6B3); color: #000000;
+    background: linear-gradient(90deg, #F5E6B3, #D4AF37); color: #000000;
     font-family: 'Neofolia';
     font-size: clamp(1rem, 1.5vw, 5rem);
     border-radius: 10em;
