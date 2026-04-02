@@ -217,6 +217,10 @@
     font-size: clamp(2rem, 3vw, 50rem);
 }
 
+.c2 .subtitle {
+    font-size: clamp(1rem, 1.5vw, 5rem);
+}
+
 .c2 .box-c1 {
     width: 100%;
     margin: 1em 0;
@@ -305,6 +309,14 @@
 .c2 .box-c3 {
     width: 100%;
     margin: 1em 0;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+.c2 .box-c4 {
+    width: 100%;
+    margin: 1em auto 0; padding: 1em;
+    background: linear-gradient(#F5E6B3, #D4AF37); color: #000000;
     text-align: center;
     overflow-x: hidden;
 }
