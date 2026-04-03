@@ -80,3 +80,5 @@ let galleryItem = [
         caption: '0007',
     }
 ];
+
+galleryItem = {...galleryItem};
