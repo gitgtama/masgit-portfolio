@@ -90,3 +90,5 @@ var galleryHtml = '';
 galleryItem.forEach((value, key) => {
     galleryHtml = galleryHtml + makeElementGallery((key + 1), value.imageUrl, value.caption);
 });
+
+document.querySelector('.c2 .box-c1 .grid-temp').innerHTML = galleryHtml;
