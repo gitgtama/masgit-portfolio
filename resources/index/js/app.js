@@ -56,27 +56,27 @@ let galleryList = [
         caption: '0001',
     },
     {
-        imageUrl: '/resources/@static/img/001.png',
+        imageUrl: '/resources/@static/img/002.png',
         caption: '0002',
     },
     {
-        imageUrl: '/resources/@static/img/001.png',
+        imageUrl: '/resources/@static/img/003.png',
         caption: '0003',
     },
     {
-        imageUrl: '/resources/@static/img/001.png',
+        imageUrl: '/resources/@static/img/004.png',
         caption: '0004',
     },
     {
-        imageUrl: '/resources/@static/img/001.png',
+        imageUrl: '/resources/@static/img/005.png',
         caption: '0005',
     },
     {
-        imageUrl: '/resources/@static/img/001.png',
+        imageUrl: '/resources/@static/img/006.png',
         caption: '0006',
     },
     {
-        imageUrl: '/resources/@static/img/001.png',
+        imageUrl: '/resources/@static/img/007.png',
         caption: '0007',
     }
 ];
