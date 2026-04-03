@@ -81,8 +81,6 @@ let galleryList = [
     }
 ];
 
-let galleryItem = {...galleryList};
-
 let makeElementGallery = (key, imageUrl, caption) => {
     return '
         
