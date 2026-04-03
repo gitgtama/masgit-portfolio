@@ -85,12 +85,6 @@ let galleryItem = {...galleryList};
 
 let makeElementGallery = (key, imageUrl, caption) => {
     return '
-        <div class="g-box" style="grid-area: g' + key + ';">
-            <div class="image">
-                <img src="' + imageUrl + '" />
-            </div>
-            <div class="unImage"></div>
-            <div class="inf">' + caption + '</div>
-        </div>
+        
     ';
 };
