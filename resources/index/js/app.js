@@ -50,7 +50,7 @@ window.addEventListener("scroll", () => {
     }
 });
 
-let galleryItem = [
+let galleryList = [
     {
         imageUrl: '/resources/@static/img/001.png',
         caption: '0001',
@@ -81,7 +81,7 @@ let galleryItem = [
     }
 ];
 
-galleryItem = {...galleryItem};
+let galleryItem = {...galleryList};
 
 let makeElementGallery = (key, imageUrl, caption) => {
     return '
