@@ -49,3 +49,34 @@ window.addEventListener("scroll", () => {
         c1El.style['opacity'] = offsetScaleC1 > 1 ? 1 : offsetScaleC1;
     }
 });
+
+let galleryItem = [
+    {
+        imageUrl: '/resources/@static/img/001.png',
+        caption: '0001',
+    },
+    {
+        imageUrl: '/resources/@static/img/001.png',
+        caption: '0002',
+    },
+    {
+        imageUrl: '/resources/@static/img/001.png',
+        caption: '0003',
+    },
+    {
+        imageUrl: '/resources/@static/img/001.png',
+        caption: '0004',
+    },
+    {
+        imageUrl: '/resources/@static/img/001.png',
+        caption: '0005',
+    },
+    {
+        imageUrl: '/resources/@static/img/001.png',
+        caption: '0006',
+    },
+    {
+        imageUrl: '/resources/@static/img/001.png',
+        caption: '0007',
+    }
+];
