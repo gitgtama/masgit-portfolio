@@ -81,8 +81,3 @@ let galleryList = [
     }
 ];
 
-let makeElementGallery = (key, imageUrl, caption) => {
-    return '
-        
-    ';
-};
