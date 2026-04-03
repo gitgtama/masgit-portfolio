@@ -50,7 +50,7 @@ window.addEventListener("scroll", () => {
     }
 });
 
-let galleryList = [
+let galleryItem = [
     {
         imageUrl: '/resources/@static/img/001.png',
         caption: '0001',
@@ -81,8 +81,12 @@ let galleryList = [
     }
 ];
 
-let galleryItem = {...galleryList};
-
 let makeElementGallery = (key, imageUrl, caption) => {
     return '<div class="g-box" style="grid-area: g' + key + ';"><div class="image"><img src="' + imageUrl + '" /></div><div class="unImage"></div><div class="inf">' + caption + '</div></div>';
 };
+
+var galleryHtml = '';
+
+galleryItem.forEach((value, key) => {
+    galleryHtml = galleryHtml + makeElementGallery((key + 1), value.imageUrl, value.caption);
+});
