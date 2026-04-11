@@ -1,5 +1,5 @@
 <?php
-require dirname(__DIR__) . '/config.php';
+require '../config.php';
 
 $stmt = $pdo->query("SELECT * FROM projects ORDER BY id DESC");
 $data = $stmt->fetchAll(PDO::FETCH_ASSOC);
