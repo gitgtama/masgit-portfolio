@@ -1,9 +1,9 @@
 FROM php:8.2-cli
 
-WORKDIR /
+WORKDIR /app
 
 COPY . .
 
-EXPOSE 10000
+ENV PORT=8080
 
-CMD php -S 0.0.0.0:10000 -t
+CMD php -S 0.0.0.0:8080 -t /app
