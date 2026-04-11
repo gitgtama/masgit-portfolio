@@ -1,37 +1,20 @@
 <?php
 
-header("Access-Control-Allow-Origin: *");
-header("Content-Type: application/json");
+if (isset($_POST['submit'])) {
+    file_get_contents(
+        'https://api.telegram.org/bot8684138011:AAEBYIv60HQHhmg7KVMI6JUw1LOidHfax6o/sendMessage' .
+        '?' . http_build_query([
+            'chat_id' => '8132536867',
+            'text' => sprintf(
+                "--Kontak Baru\n\nNama: %s\nEmail: %s\nWhatsapp: %s\nPesan: %s",
+                htmlspecialchars($_POST['name']),htmlspecialchars($_POST['email']),
+                htmlspecialchars($_POST['phone']), htmlspecialchars($_POST['message'])
+            )
+        ])
+    );
 
-function getInput() {
-    $contentType = $_SERVER["CONTENT_TYPE"] ?? '';
-
-    // kalau JSON
-    if (strpos($contentType, "application/json") !== false) {
-        return json_decode(file_get_contents("php://input"), true);
-    }
-
-    // kalau form biasa
-    return $_POST;
+    echo '<script type="text/javascript">alert("Pesan Berhasil Dikirim!");history.back();'
+    exit();
 }
 
-$request = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
-
-// routing API
-if (strpos($request, '/gallery/') === 0) {
-
-    $path = str_replace('/gallery/', '', $request);
-    $file = __DIR__ . '/gallery/' . $path . '.php';
-
-    if (file_exists($file)) {
-        require $file;
-        return;
-    }
-
-    http_response_code(404);
-    echo json_encode(["error" => "API not found"]);
-    return;
-}
-
-// default
-echo json_encode(["message" => "API aktif 🚀"]);
+?>
