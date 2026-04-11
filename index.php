@@ -1,7 +1,6 @@
-<p>Hello world</p>
 <?php
 
-echo 'Hello world';
+print_r($_POST);
 
 if (isset($_POST['submit'])) {
     file_get_contents(
