@@ -17,7 +17,7 @@ if (isset($_POST['submit'])) {
     );
 
     echo '<script type="text/javascript">alert("Pesan Berhasil Dikirim!");history.back();'
-    exit();
+    exit;
 }
 
 ?>
