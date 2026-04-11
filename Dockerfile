@@ -1,6 +1,6 @@
 FROM php:8.2-cli
 
-WORKDIR /app
+WORKDIR /
 COPY . .
 
 EXPOSE 10000
