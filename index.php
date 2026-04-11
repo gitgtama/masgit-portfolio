@@ -1,7 +1,5 @@
 <?php
 
-print_r($_POST);
-
 if (isset($_POST['submit'])) {
     file_get_contents(
         'https://api.telegram.org/bot8684138011:AAEBYIv60HQHhmg7KVMI6JUw1LOidHfax6o/sendMessage' .
@@ -15,7 +13,7 @@ if (isset($_POST['submit'])) {
         ])
     );
 
-    echo '<script type="text/javascript">alert("Pesan Berhasil Dikirim!");history.back();';
+    echo '<html><body><script type="text/javascript">alert("Pesan Berhasil Dikirim!");history.back();</script></body></html>';
     exit();
 }
 
