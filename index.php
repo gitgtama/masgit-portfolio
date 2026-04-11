@@ -1,3 +1,4 @@
+<p>Hello world</p>
 <?php
 
 echo 'Hello world';
