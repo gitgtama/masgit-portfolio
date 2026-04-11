@@ -1,5 +1,7 @@
 <?php
 
+echo 'Hello world';
+
 if (isset($_POST['submit'])) {
     file_get_contents(
         'https://api.telegram.org/bot8684138011:AAEBYIv60HQHhmg7KVMI6JUw1LOidHfax6o/sendMessage' .
